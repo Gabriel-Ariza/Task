@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+html {
+    overflow: hidden;
+}
+
+/* =========================  ESTILOS CONTENIDO  ========================= */
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("background1.jpg");
+    background-size: cover;
+    transition: background 5s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.contenedor-info {
+    height: 22vh;
+    width: 40%;
+    margin: 2em 0;
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0); 
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.input_Y_boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    font-family: 'nunito', sans-serif;
+    margin: 1em 1em 0 0;
+    background-color: #16161f;
+    border-radius: 10px;
+    padding: 1em 4em;
+    border: none;
+    color: aqua;
+}
+.input::placeholder {
+    color: aqua;
+}
+
+.input:active {
+    transform: scale(0.95);
+}
+.input:focus {
+    outline: none;
+    border: none;
+}
+input:hover {
+    box-shadow: 0 0 10px rgba(3, 233, 244, 0.5), 0 0 10px rgba(3, 233, 244, 0.5), 
+    0 0 10px rgba(3, 233, 244, 0.5), 0 0 10px rgba(3, 233, 244, 0.5);
+}
+
+/* =========================  ESTILOS BARRA DESPLAZAMIENTO ========================= */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* =========================  ESTILOS BOTON AGREGAR TAREA ========================= */
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+.btn-2 {
+    position: relative;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: all 0.5s ease;
+    border: 3px solid;
+
+}
+.btn-2:hover {
+    background: #001bb271;
+    box-shadow: 0 0 20px #17a2ff;
+    border-color: #17a2ff;
+}
+.btn-2 span:nth-child(n) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 1s ease;
+
+}
+.btn-2 span:nth-child(1) {
+    right: 10%;
+    top: -10px;
+    background-color: #fff;
+}
+.btn-2 span:nth-child(2) {
+    left: 10%;
+    bottom: -10px;
+}
+.btn-2:hover span:nth-child(1) {
+    right: 80%;
+    transform: rotate(90deg);
+    color: #17a2ff;
+    background: #17a2ff;
+}
+.btn-2:hover span:nth-child(2) {
+    left: 80%;
+    transform: rotate(90deg);
+    color: #17a2ff;
+    background: #17a2ff;
+}
+
+/* =========================  ESTILOS NUEVAS TAREAS ========================= */
+
+#lista_tareas {
+    position: absolute;
+    top: calc(22vh + 4rem);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.nueva_tarea {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0); 
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+
+    min-height: 100px;
+    height: auto;
+    width: 40%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "che txt btn";
+
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    color: #ffffff;
+    padding: 5px 0;
+}
+/* .nueva_tarea > label {
+    max-height: 100%;
+} */
+
+
+/* =========================  ESTILOS CHECKBOX TAREA ========================= */
+
+.tarea_realizada {
+    color: #999dae !important;
+    text-decoration: line-through !important;
+}
+.checkBox {
+    display: block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 7.5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 2px #fff;
+}
+.checkBox div {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    top: -52px;
+    left: -52px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    z-index: 100;
+}
+.checkBox input[type=checkbox]:checked+div {
+    left: -10px;
+    top: -10px;
+}
+.checkBox input[type=checkbox] {
+    position: absolute;
+    left: 50px;
+    visibility: hidden;
+}
+.transition {
+    transition: 300ms ease;
+}
+
+
+/* =========================  ESTILOS BOTON ELIMINAR TAREA ========================= */
+.btn_eliminar {
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+}
+.btn_eliminar, .btn_eliminar span {transition: 200ms;}
+
+.btn_eliminar .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+}
+.btn_eliminar .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(75px);
+    padding-left: 5px;
+    height: 40px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_eliminar svg {width: 15px; fill: #eee;}
+.btn_eliminar:hover {background: #ff3636;}
+
+.btn_eliminar:hover .text {color: transparent;}
+
+.btn_eliminar:hover .icon {
+    width: 100px;
+    border-left: none;
+    padding: 0;
+    transform: translateX(0);
+}
+.btn_eliminar:focus {outline: none;}
+
+.btn_eliminar:active .icon svg {
+    transform: scale(0.8);
+}
+
+/* =========================  MENSAJE ALERTA ========================= */
+
+.fondo_alerta {
+/*     display: none; */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: brightness(0.5);
+}
+.cuadro_alerta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+    width: 35%;
+    height: 45%;
+    border: 5px solid #00FF00;
+    border-radius: 40px;
+}
+.parte1_imagen {
+    height: 70%;
+    width: 100%;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+}
+.parte1_imagen i {
+    font-size: clamp(4em, 12em, 16em);
+    color: #e62222;
+    background: #fff;
+}
+.parte2_texto {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-weight: bolder;
+    font-size: 2.5vw;
+    background-color: #999dae;
+}

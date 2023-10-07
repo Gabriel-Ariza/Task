@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+
+    <script src="https://kit.fontawesome.com/2e497294d6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="lista.svg" type="image/svg+xml">
+</head>
+
+
+<body>
+    <div class="contenedor">
+        <div class="contenedor-info" onclick="enfocarInput()">
+
+            <h1><i class="fa-solid fa-list-check"></i> Lista de Tareas</h1>
+            <form id="formulario" class="input_Y_boton">
+                <input type="text" id="nombre_tarea" class="input" placeholder="-->  Agregar Tarea  <--">
+                <div class="contenedor-boton">
+                    <a href="#" class="btn btn-formulario btn-2" id="btn_add_tarea">
+                        AÑADIR
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div id="lista_tareas"></div>
+
+    </div>
+
+<script src="test.js"></script>
+
+</body>
+</html>
