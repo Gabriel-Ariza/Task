@@ -34,23 +34,6 @@ Bienvenido al Generador y Administrador de Tareas. Esta aplicación te permite l
 
 6. ¡Listo! Ahora puedes gestionar tus tareas de manera eficiente.
 
-## Contribución 💡
-
-Si deseas contribuir a este proyecto, por favor sigue estos pasos:
-
-1. Haz un fork del repositorio.
-
-2. Clona el repositorio a tu máquina local.
-
-3. Crea una rama para tu contribución: `git checkout -b mi-contribucion`
-
-4. Realiza tus cambios y asegúrate de seguir las convenciones de estilo del proyecto.
-
-5. Haz commit de tus cambios: `git commit -m "Añadida nueva funcionalidad"`
-
-6. Haz push de tus cambios a tu repositorio en GitHub: `git push origin mi-contribucion`
-
-7. Crea un pull request en el repositorio original.
 
 ## Contacto 📬
 
