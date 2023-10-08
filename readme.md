@@ -1,34 +1,60 @@
+# Generador y Administrador de Tareas 📝
 
-# Documentación del Proyecto de Biblioteca Personal 📚
-
-## Descripción del Proyecto 📖
-
-El proyecto de Biblioteca Personal es una aplicación que permite a los usuarios gestionar una colección de libros. Los usuarios pueden realizar las siguientes acciones:
-
-- 📜 Ver la lista de libros disponibles.
-- 📊 Ordenar los libros por diferentes criterios.
-- ➕ Agregar nuevos libros a la colección.
-- ✏️ Actualizar la información de un libro existente.
-- 🗑️ Eliminar libros de la colección.
+Bienvenido al Generador y Administrador de Tareas. Esta aplicación te permite llevar un registro de tus tareas pendientes, agregar nuevas tareas, eliminar tareas y marcar tareas como realizadas. ¡Comienza a organizarte ahora mismo!
 
 ## Funcionalidades 🚀
 
-### Ordenamiento de Libros 📂
+### Ver Tareas Pendientes 📜
 
-Los usuarios pueden ordenar la lista de libros por diferentes criterios, como título (A-Z), título (Z-A), autor (A-Z), año (más reciente) y año (más antiguo). Esto facilita la búsqueda y organización de la colección.
+- Puedes ver la lista de tareas pendientes para mantenerte al tanto de tus actividades.
 
-### Agregar Libros 📝
+### Agregar Tareas Nuevas ➕
 
-Los usuarios pueden agregar nuevos libros a la biblioteca proporcionando información como título, autor, año de publicación, género, etc. La nueva entrada se guarda en el almacenamiento local para su persistencia.
+- Añade fácilmente nuevas tareas a tu lista especificando un título y una descripción.
 
-### Actualizar Libros 🔄
+### Eliminar Tareas 🗑️
 
-Los usuarios pueden actualizar la información de un libro existente, como corregir el título, el autor o el año de publicación. Los cambios se reflejan en la lista de libros y se almacenan localmente.
+- Si una tarea ya no es relevante, puedes eliminarla de tu lista de tareas.
 
-### Eliminar Libros 🗑️
+### Marcar Tareas como Realizadas ✅
 
-Los usuarios pueden eliminar un libro de la colección si ya no desean mantenerlo en su biblioteca personal. La entrada correspondiente se elimina de la lista y del almacenamiento local.
+- Cuando completes una tarea, simplemente márcala como realizada para llevar un registro de tus logros.
 
----
+## Uso de la Aplicación 📋
 
-Esta documentación proporciona una descripción general de las funcionalidades clave del proyecto de Biblioteca Personal. ¡Espero que esta información sea útil para comprender cómo funciona la aplicación! 😊📚
+1. Abre la aplicación del Generador y Administrador de Tareas.
+
+2. Visualiza tu lista de tareas pendientes para ver qué actividades tienes planeadas.
+
+3. Agrega una nueva tarea haciendo clic en el botón "Agregar Tarea" y proporcionando un título y una descripción.
+
+4. Marca una tarea como realizada haciendo clic en el icono de marca de verificación junto a la tarea.
+
+5. Elimina tareas que ya no necesitas seleccionándolas y haciendo clic en "Eliminar Tarea".
+
+6. ¡Listo! Ahora puedes gestionar tus tareas de manera eficiente.
+
+## Contribución 💡
+
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+
+2. Clona el repositorio a tu máquina local.
+
+3. Crea una rama para tu contribución: `git checkout -b mi-contribucion`
+
+4. Realiza tus cambios y asegúrate de seguir las convenciones de estilo del proyecto.
+
+5. Haz commit de tus cambios: `git commit -m "Añadida nueva funcionalidad"`
+
+6. Haz push de tus cambios a tu repositorio en GitHub: `git push origin mi-contribucion`
+
+7. Crea un pull request en el repositorio original.
+
+## Contacto 📬
+
+Si tiene alguna pregunta o sugerencia, no dudes en ponerte en contacto-
+
+¡Disfruta usando el Generador y Administrador de Tareas!
+
