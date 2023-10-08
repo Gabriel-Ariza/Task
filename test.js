@@ -9,7 +9,7 @@ function changeBackground() {
     if (fondo_actual >= backgrounds.length) {
         fondo_actual = 0;
     }
-    
+
     contenedor.style.backgroundImage = backgrounds[fondo_actual];
 
 }
